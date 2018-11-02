@@ -1,0 +1,4 @@
+Now that we have started working on the screenplay, let’s turn the sorcerers-code directory into a Git project. We do this with:
+
+git init
+The word init means initialize. The command sets up all the tools Git needs to begin tracking changes made to the project.
