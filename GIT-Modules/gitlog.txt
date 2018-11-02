@@ -1,0 +1,14 @@
+git log
+Often with Git, you'll need to refer back to an earlier version of a project. Commits are stored chronologically in the repository and can be viewed with:
+
+git log
+Instructions
+1.
+From the terminal, log a list of your commits.
+
+In the output, notice:
+
+A 40-character code, called a SHA, that uniquely identifies the commit. This appears in orange text.
+The commit author (you!)
+The date and time of the commit
+The commit message
