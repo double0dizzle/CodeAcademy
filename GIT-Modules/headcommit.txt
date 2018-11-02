@@ -1,0 +1,7 @@
+head commit
+In Git, the commit you are currently on is known as the HEAD commit. In many cases, the most recently made commit is the HEAD commit.
+
+To see the HEAD commit, enter:
+
+git show HEAD
+The output of this command will display everything the git log command displays for the HEAD commit, plus all the file changes that were committed.
