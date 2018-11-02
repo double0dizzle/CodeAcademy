@@ -1,0 +1,4 @@
+git status
+As you write the screenplay, you will be changing the contents of the working directory. You can check the status of those changes with:
+
+git status
