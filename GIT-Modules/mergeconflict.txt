@@ -1,0 +1,55 @@
+merge conflict I
+The merge was successful because master had not changed since we made a commit on fencing. Git knew to simply update master with changes on fencing.
+
+What would happen if you made a commit on master before you merged the two branches? Furthermore, what if the commit you made on master altered the same exact text you worked on in fencing? When you switch back to master and ask Git to merge the two branches, Git doesn't know which changes you want to keep. This is called a merge conflict.
+
+Instructions
+1.
+You are on the master branch. In the code editor, where you have written:
+
+-Engage in swordfights with pirates
+Add the word "professional", so the text reads:
+
+-Engage in swordfights with professional pirates
+Click Run.
+
+2.
+Add resume.txt to the staging area.
+
+3.
+Commit the changes to the repository with a commit message.
+
+4.
+Imagine a few weeks have passed, and you'd like to develop your fencing resumé some more.
+
+Switch back to the fencing branch.
+
+5.
+From fencing, change the line so it reads:
+
+-Engage in swordfights with professional pirates such as Smee.
+Click Run.
+
+6.
+Once again, add resume.txt to the staging area.
+
+7.
+Commit the changes to the repository with a commit message.
+
+
+
+PETE PAN
+Address: No 31 Kensington Hill Park, London, England
+Phone: 000-111-2222
+-------------------
+
+WORK EXPERIENCE
+Leader - Lost Boys
+Neverland, 5th Star to Right, Straight on 'Til Morning
+Duties:
+-Manage Lost Boys
+-Consult with Winged Sprites
+-Engage in swordfights with professional pirates such as Smee.
+-------------------
+
+VOLUNTEER EXPERIENCE
