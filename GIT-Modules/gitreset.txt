@@ -1,0 +1,9 @@
+git reset I
+Great! The files you've added to the staging area belong in the same commit.
+
+What if, before you commit, you accidentally delete an important line from scene-2.txt? Unthinkingly, you add scene-2.txt to the staging area. The file change is unrelated to the Larry/Laertes swap and you don't want to include it in the commit.
+
+We can unstage that file from the staging area using
+
+git reset HEAD filename
+This command resets the file in the staging area to be the same as the HEAD commit. It does not discard file changes from the working directory, it just removes them from the staging area.
