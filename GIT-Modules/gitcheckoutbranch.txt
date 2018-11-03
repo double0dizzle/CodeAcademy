@@ -1,0 +1,21 @@
+git checkout
+Great! You just created a new branch.
+
+The master and fencing branches are identical: they share the same exact commit history. You can switch to the new branch with
+
+git checkout branch_name
+Here, branch_name is the name of the branch. If the branch's name is skill
+
+git checkout skill
+Once you switch branch, be now able to make commits on the branch that have no impact on master.
+
+You can continue your workflow, while master stays intact!
+
+Instructions
+1.
+Switch to the fencing branch from the master branch.
+
+2.
+Use git branch to verify that you have switched branches.
+
+In the output, notice the * is now over the fencing branch.
