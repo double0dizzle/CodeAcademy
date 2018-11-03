@@ -1,0 +1,22 @@
+git merge
+What if you wanted include all the changes made to the fencing branch on the master branch? We can easily accomplish this by merging the branch into master with:
+
+git merge branch_name
+For example, if I wanted to merge the skills branch to master, I would enter
+
+git merge skills
+In a moment, you'll merge branches. Keep in mind:
+
+Your goal is to update master with changes you made to fencing.
+fencing is the giver branch, since it provides the changes.
+master is the receiver branch, since it accepts those changes.
+Instructions
+1.
+You are currently on the fencing branch. Switch over to the master branch.
+
+2.
+Your sword-fighting experience is so impressive that it belongs on the master version of your resumé.
+
+From the terminal, merge the fencing branch into the master branch.
+
+Notice the output: The merge is a "fast forward" because Git recognizes that fencing contains the most recent commit. Git fast forwards master to be up to date with fencing.
