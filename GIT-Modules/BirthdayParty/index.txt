@@ -1,0 +1,38 @@
+$ git branch
+* master
+  moma
+  whitney
+$ git branch -D moma whitney
+Deleted branch moma (was 978e5a1).
+Deleted branch whitney (was 9b384f9).
+$ git branch
+* master
+$ git checkout -b unordered-list
+Switched to a new branch 'unordered-list'
+$ git branch
+  master
+* unordered-list
+$ git checkout -b master
+fatal: A branch named 'master' already exists.
+$ git checkout master
+Switched to branch 'master'
+$ git branch
+* master
+  unordered-list
+  $ git add .
+$ git commit -m "unordered list"
+[master 57a7d6f] unordered list
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+$ git checkout -b big-heading
+Switched to a new branch 'big-heading'
+$ git add .
+$ git commit -m "new header"
+[big-heading 49ecfa6] new header
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+$ git checkout master
+Switched to branch 'master'
+$ git merge big-heading
+Updating 57a7d6f..49ecfa6
+Fast-forward
+ index.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
