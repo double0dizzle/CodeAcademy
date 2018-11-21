@@ -1,0 +1,10 @@
+$ git branch
+  edits
+* master
+$ git add .
+$ git add .
+$ git commit -m "Resolve merge conflict"
+[master 1278b33] Resolve merge conflict
+$ git branch -d edits
+Deleted branch edits (was 0dc9f6a).
+$
