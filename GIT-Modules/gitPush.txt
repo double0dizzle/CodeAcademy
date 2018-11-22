@@ -1,0 +1,45 @@
+git push
+Now it's time to share our work with Sally.
+
+The command:
+
+git push origin your_branch_name
+will push your branch up to the remote, origin. From there, Sally can review your branch and merge your work into the master branch, making it part of the definitive project version.
+
+Instructions
+1.
+Enter this command
+
+cd my-quizzes
+to change directories into the my-quizzes directory.
+
+2.
+Push your branch up to the remote.
+
+In the output, notice the line:
+
+To /home/ccuser/workspace/curriculum/science-quizzes
+ * [new branch]      bio-questions -> bio-questions
+Git informs us that the branch bio-questions was pushed up to the remote. Sally can now review your new work and can merge it into the remote's master branch.
+
+
+$ git add .
+$ git commit -m "biology question added"
+[bio-questions fd51986] biology question added
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+$ cd my-quizzes
+bash: cd: my-quizzes: No such file or directory
+$ git push origin master
+Everything up-to-date
+$ git branch
+* bio-questions
+  master
+$ git push origin bio-questions
+Counting objects: 3, done.
+Delta compression using up to 16 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 371 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To /home/ccuser/workspace/curriculum-a/science-quizzes
+ * [new branch]      bio-questions -> bio-questions
+$
