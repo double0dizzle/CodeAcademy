@@ -1,0 +1,72 @@
+git merge
+Even though Sally's new commits have been fetched to your local copy of the Git project, those commits are on the origin/master branch. Your local master branch has not been updated yet, so you can't view or make changes to any of the work she has added.
+
+In Lesson III, Git Branching we learned how to merge branches. Now we'll use the git merge command to integrate origin/master into your local master branch. The command:
+
+git merge origin/master
+will accomplish this for us.
+
+Instructions
+1.
+Enter this command:
+
+cd my-quizzes
+to go into the my-quizzes directory.
+
+2.
+You are on your local master branch. In your commit history, the commit message of the HEAD commit is:
+
+Add first question to Physics quiz
+From the terminal, merge with origin/master, where Sally's most recent commits are.
+
+Notice the output:
+
+Updating a2ba090..bc87a1a Fast-forward biology.txt | 2 +- 1 file changed, 1 insertion(+), 1 deletion(-)
+Git has performed a "fast-forward" merge, bringing your local master branch up to speed with Sally's most recent commit on the remote.
+3.
+Print the commit history.
+
+In the output, notice that the HEAD commit has changed. The commit message now reads:
+
+ Add heading and comment to biology quiz
+$ cd my-quizzes
+$ git fetch
+remote: Counting objects: 5, done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 5 (delta 1), reused 0 (delta 0)
+Unpacking objects: 100% (5/5), done.
+From /home/ccuser/workspace/curriculum-a/science-quizzes
+ * [new branch]      master     -> origin/master
+$ cd my-quizzes
+bash: cd: my-quizzes: No such file or directory
+$ merge origin/master
+bash: merge: command not found
+$ git merge
+fatal: No remote for the current branch.
+$ git merge origin/master
+Updating 2fd7d9b..3a29454
+Fast-forward
+ biology.txt | 4 ++++
+ 1 file changed, 4 insertions(+)
+ create mode 100644 biology.txt
+
+ commit 3a294546f4a55f02bf37233ef8988d8b9dd7ce59
+Author: danasselin <johndoe@example.com>
+Date:   Tue Nov 3 12:33:23 2015 -0500
+
+    Add heading and comment to biology quiz
+
+commit 6aa7704a31d05541141fbb529abf946bd2fd416b
+Author: danasselin <johndoe@example.com>
+Date:   Thu Oct 29 17:04:04 2015 -0400
+
+    Add biology quiz
+
+commit 2fd7d9b248e0b4a3b531b9af3bb61916d42ad45f
+Author: danasselin <johndoe@example.com>
+Date:   Thu Oct 29 15:42:55 2015 -0400
+
+    Add first question to physics quiz
+
+commit 2c4e484e0f5bda111a164e6580f4a4a603cea48f
+:
