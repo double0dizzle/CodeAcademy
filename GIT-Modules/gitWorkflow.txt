@@ -1,0 +1,64 @@
+Git workflow
+Now that you've merged origin/master into your local master branch, you're ready to contribute some work of your own. The workflow for Git collaborations typically follows this order:
+
+Fetch and merge changes from the remote
+Create a branch to work on a new project feature
+Develop the feature on your branch and commit your work
+Fetch and merge from the remote again (in case new commits were made while you were working)
+Push your branch up to the remote for review
+Steps 1 and 4 are a safeguard against merge conflicts, which occur when two branches contain file changes that cannot be merged with the git merge command. Step 5 involves git push, a command you will learn in the next exercise.
+
+Instructions
+1.
+Enter this command:
+
+cd my-quizzes
+to change directories into the my-quizzes directory.
+
+2.
+Enter the Git command:
+
+git branch <branch_name>
+to create a branch to develop questions for the biology quiz. Name the branch bio-questions.
+
+Note: be careful to spell the name "bio-questions" exactly as it appears.
+
+3.
+Switch to your new branch with the command:
+
+git checkout <branch_name>
+replacing <branch_name> with the name of the new branch.
+
+4.
+On your branch, open biology.txt in the code editor.
+
+Add a biology question to the file and some sample answers. For example:
+
+  What is an animal that hunts and eats other animals called?
+  a) herbivore
+  b) prey 
+  c) ecosystem 
+  d) predator
+5.
+Add biology.txt to the staging area.
+
+6.
+Commit the work to the repository with a commit message.
+
+
+
+$ cd my-quizzes
+$ git branch bio-questions
+$ git branch
+  bio-questions
+* master
+$ git checkout bio-questions
+Switched to branch 'bio-questions'
+$ ls
+biology.txt  chemistry.txt  physics.txt
+$ cd biology.txt
+bash: cd: biology.txt: Not a directory
+$ git add .
+$ git commit -m "biology question added"
+[bio-questions fd51986] biology question added
+ 1 file changed, 5 insertions(+), 1 deletion(-)
