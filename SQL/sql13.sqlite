@@ -29,3 +29,7 @@ There are also some special operators that we will learn more about in the upcom
 SELECT *
 FROM movies
 WHERE imdb_rating < 5;
+
+SELECT *
+FROM movies
+WHERE year > 2014;
