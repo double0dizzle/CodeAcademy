@@ -1,0 +1,29 @@
+Between
+The BETWEEN operator can be used in a WHERE clause to filter the result set within a certain range. The values can be numbers, text or dates.
+
+This statement filters the result set to only include movies with names that begin with letters 'A' up to, but not including 'J'.
+
+SELECT *
+FROM movies
+WHERE name BETWEEN 'A' AND 'J';
+Here is another one:
+
+SELECT *
+FROM movies
+WHERE year BETWEEN 1990 AND 1999;
+In this statement, the BETWEEN operator is being used to filter the result set to only include movies with years between 1990 up to, and including 1999.
+
+Really interesting point to emphasize again:
+
+BETWEEN two letters is not inclusive of the 2nd letter.
+BETWEEN two numbers is inclusive of the 2nd number.
+
+
+
+SELECT *
+FROM movies
+WHERE name BETWEEN 'D' AND 'G';
+
+SELECT *
+FROM movies
+WHERE year BETWEEN 1970 AND 1979;
